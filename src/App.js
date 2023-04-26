@@ -8,7 +8,7 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/:linkref",
+    path: "/link/:linkref",
     element: (
       <LinkRefComponent />
     ),
