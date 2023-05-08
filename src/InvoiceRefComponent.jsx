@@ -16,7 +16,7 @@ function InvoiceRefComponent() {
 
   useEffect(() => {
     (async () => {
-      const { status, data } = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/v1/payment/invoices/${invoiceref}`)
+      const { status, data } = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/v1/payment/invoice/${invoiceref}`)
       status == 200 && setPaymentData(data)
     })()
   }, [])
