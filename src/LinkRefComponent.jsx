@@ -76,7 +76,7 @@ function LinkRefComponent() {
     }, [amount])
 
     const loadCheckout = () => {
-      const randomReference = `ITEX-PAY-${Math.floor(Math.random() * 10000)}`;
+      const randomReference = `ITEX-PAY-LINK-${Math.floor(Math.random() * 10000)}`;
       const Pay = new window.ItexPayNS.ItexPay({
         api_key: key,
         first_name: fname,
